@@ -24,18 +24,18 @@ Power Cord 0M/1Mは、[Source Code Pro](https://github.com/adobe-fonts/source-co
     - http://www.1001fonts.com/source-code-pro-font.html 
 - Migu 1M は以下のサイトで配布されています
   - http://mix-mplus-ipa.osdn.jp/migu/
-- レシピの実行には`make` `fontforge` `git` の3つのコマンドが必要です。Linux環境が最も簡単でお勧めです。Windowsで実行したい場合はBash on Ubuntu on WindowsやMSYS2などをご用意いただければ可能ですが若干難易度が高いと思われます。（Bash on Ubuntu on Windowsでの動作確認は行っています）
+- レシピの実行には`make` `fontforge` `git` の3つのコマンドが必要です。Linux環境が最も簡単でお勧めです。Windows上で実行したい場合はfontforgeのコマンドが通るようPATHを設定（インストールしただけでは設定されません）いただくか、Bash on Ubuntu on WindowsやMSYS2などをご用意いただく必要があります。
 - `Makefile`と同じフォルダ上にsrcを作成し、ダウンロードしたフォントを以下のように配置してください。あとは`make`コマンドを実行すると。自動的に生成されます。
 
 ```
 +-- Makefile
 |-- merge.py
 |-- ...
-+-- src
+`-- src
     |-- SourceCodePro-Regular.ttf
     |-- SourceCodePro-Bold.ttf
     |-- migu-1m-regular.ttf
-    +-- migu-1m-bold.ttf
+    `-- migu-1m-bold.ttf
 ```
 
 ## 合成に使用されるフォントの著作権
@@ -64,7 +64,6 @@ Power Cord 0M/1Mは、[Source Code Pro](https://github.com/adobe-fonts/source-co
 このレシピ（MakefileやPythonスクリプトなど）はすべて[MITライセンス](https://opensource.org/licenses/MIT)として配布しますので、商用・非商用問わず無償で自由に書き換えて他の合成フォントのスクリプトに転用しても構いません。ただし以下の著作権表示・ライセンス表示をソフトウェアのすべての複製または重要な部分に記載してください。
 
 ```
-Copyright (C) 2016 Retorillo
-Distributed under the MIT license
-https://opensource.org/licenses/MIT
+MIT License
+Copyright (C) 2016-2017 Retorillo
 ```
